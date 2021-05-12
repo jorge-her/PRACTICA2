@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+#info-view {
+    display:flex;
+    padding: 0 0px;
+    margin-top: 20px;
+    background-color: #f2f2f2;;
+    height: 100%;
+    font-family: Verdana;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#presentation-panel {
+    background: #f2f2f2;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+#nombre-estab {
+    font-size: 24px;
+    margin-left: 7px;
+}
+
+#img-estab {
+    height: 20rem;
+    width: 35rem;
+}
+
+
+#info-panel {
+    justify-content: center;
+    margin: 100px 150px;
+    width: 370px;
+    height: 450px;
+    background: white;
+
+}
+
+
+#info-list {
+    list-style-type: none;
+}
+
+
+#carta-btn {
+    margin: 50px 0 0 200px;
+    font-family: Verdana;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 10rem 10rem 10rem 10rem;
+    border:none;
+    background-color: #45f542;
+    color: black;
+    opacity: 0.55;
+    cursor: pointer;
+}

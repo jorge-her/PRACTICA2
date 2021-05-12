@@ -1,0 +1,30 @@
+<app-header></app-header>
+<br>
+
+<app-search></app-search>
+<ul>
+    <li *ngFor="let establecimiento of establecimientos">
+        <div class ="cont_establecimiento">
+            <a>
+                <div class="container">
+                    <img src="{{establecimiento.imagen}}" alt="Imagen establecimiento" class="imagen_establecimiento" (click)="this.router.navigate(['visualizador-info-component/'+establecimiento.id]);"> 
+                    <div class="kilometros">
+                        {{establecimiento.distancia}}
+                        <span>km</span>
+                    </div>
+                </div>
+                
+
+            <div>
+                {{establecimiento.nombre}}
+            </div>
+            <div>
+                {{establecimiento.valoracion}}
+                <span>&#9733;</span>
+           </div>
+           
+            
+        </a>
+        </div> 
+    </li>
+</ul>

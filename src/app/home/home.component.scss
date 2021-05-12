@@ -1,0 +1,58 @@
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+li a{
+    height: 25rem;
+    width: 30rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1 rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+li a:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.kilometros {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 90px;
+    font-size: 20px;
+    border-radius: 10px;
+    vertical-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+    display: table-cell;
+    padding-top: 10px;
+  
+}
+.imagen_establecimiento{
+    height: 20rem;
+    width: 30rem;
+
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.cont_establecimiento{
+    font-family: 'Montserrat';
+}

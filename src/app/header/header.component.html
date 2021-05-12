@@ -1,0 +1,49 @@
+<div id="site-header">
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>home</mat-icon>
+      <span>Volver a inicio</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>manage_accounts</mat-icon>
+      <span>Ajustes de la cuenta</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>language</mat-icon>
+      <span>Idioma - ES</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      <span>Cerrar sesión</span>
+    </button>
+  </mat-menu>
+  <mat-toolbar id="header-bar" readonly="True">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Go back icon">
+      <mat-icon>menu</mat-icon>
+  </button>
+  <mat-form-field id="address-form" appearance="fill">
+      <input matInput placeholder="Calle Pinocho, 16">
+  </mat-form-field>
+  <button mat-icon-button aria-label="Go back icon">
+      <mat-icon>arrow_back</mat-icon>
+  </button>
+  </mat-toolbar>
+</div>
+
+<!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Redial</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voice mail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu> -->

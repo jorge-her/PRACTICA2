@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div id="info-view">
+    <div id="presentation-panel">
+        <h3 id="nombre-estab">{{(Seleccion.nombre)}}</h3>
+        <img id="img-estab" src={{(Seleccion.imagen)}}>
+        <br>
+        <button (click)="this.router.navigate(['carta-component/'+Seleccion.id]);" id="carta-btn">Consultar carta</button>
+    </div>
+
+    <div id="info-panel">
+        <ul id="info-list">
+            <mat-icon aria-hidden="true" aria-label="Location icon">location_on</mat-icon>
+            <li>{{(Seleccion.direccion)}}</li>
+            <br>
+            <mat-icon aria-hidden="true" aria-label="Distance icon">my_location</mat-icon>
+            <li>{{(Seleccion.distancia)}}km</li>
+            <br>
+            <mat-icon aria-hidden="true" aria-label="Type icon">restaurant_menu</mat-icon>
+            <li>{{(tipoComida)}}</li>
+            <br>
+            <mat-icon aria-hidden="true" aria-label="Rate icon" >star_rate</mat-icon>
+            <li>{{(Seleccion.valoracion)}}/5.0</li>
+            <br>
+            <mat-icon aria-hidden="true" aria-label="Capacity icon">groups</mat-icon>
+            <li>{{(Seleccion.aforo_actual)}}/{{(Seleccion.aforo_maximo)}}</li>
+            <br>
+            <li><mat-icon aria-hidden="true" aria-label="Measures icon">health_and_safety</mat-icon>Medidas anti CoVID-19:
+                <ul>
+                    <p>{{(Seleccion.medidas_covid)}}</p>
+                </ul>
+            </li>
+        </ul>
+            
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup" (click)="closeFilter()"><i class="fas fa-times"></i></a>
+<h3 class="titulo3">Filtros de búsqueda</h3>
+<div class="popupform">
+    <div class="contenedor-inputs">
+        <p class="fila-input">Tipo de comida: 
+            <select id = "caja1" [(ngModel)]= 'selectedType'>
+                <option *ngFor="let type of TipoEstab" value="{{ type[1]}}">{{ type[0]}}</option>
+            </select>
+        </p>
+        <p class="fila-input">Calificación: 
+            <select id = "caja2" [(ngModel)]= 'selectedValoracion'>
+                <option *ngFor="let val of Valoracion" value="{{ val[1]}}">{{ val[0]}}</option>
+            </select>
+        </p>
+        <p class="fila-input">Terraza disponible: 
+            <select id = "caja3" [(ngModel)]= 'selectedTerraza'>
+                <option *ngFor="let ter of Terraza" value="{{ ter[1]}}">{{ ter[0]}}</option>
+            </select>
+        </p>
+    </div>
+
+    <hr class="faded" />
+
+    <div class="contenerdor-submit">
+        <input type="submit" class="btn-submit" value="Aplicar" (click) = "filtrar()">
+    </div>
+        
+</div>

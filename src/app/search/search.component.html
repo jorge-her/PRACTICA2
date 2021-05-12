@@ -1,0 +1,17 @@
+<div id="search-and-filter-container">
+    <div>
+        <input ID="search-bar" type="text" placeholder="Buscar establecimiento" [(ngModel)]="searchTerm"
+            (change)="search()">
+        <button id="search-button" (click)="search()">Search</button>
+    </div>
+
+    <nav>
+        <button id="btn-abrir-popup" class="btn-abrir-popup" (click)="openFilter()" title="Filtros"><i
+                class="material-icons">filter_list</i></button>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <app-filtro></app-filtro>
+            </div>
+        </div>
+    </nav>
+</div>
